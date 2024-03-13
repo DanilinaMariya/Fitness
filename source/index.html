@@ -5,28 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPERGYM</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="images/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
+    <header class="header">
+      <div class="header__wrapper wrapper">
+        <svg class="header__logo" width="100" height="20">
+          <use href="/__spritemap#sprite-logo"></use>
+        </svg>
+        <a class="header__phone" href="tel:+78005555555">8 800 555-55-55</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__wrapper wrapper">
+          <h1 class="hero__title">Фитнес центр</h1>
+          <span class="hero__city">Омск</span>
+          <p class="hero__description">Тренажёрный зал Групповые занятия Кардио-зона</p>
+          <div class="hero__image">
+            <picture>
+              <source type="images/webp" media="(min-width: 768px)" srcset="img/hero.webp 1x, img/hero@2x.webp 2x"  width="324" height="390">
+              <img class="hero__img" src="img/hero.jpg" srcset="img/hero.jpg 1x, img/hero@2x.jpg 2x" width="324" height="390" alt="мужчина в футболке супермена.">
+            </picture>
+          </div>
+
+          <button class="hero__button button button--light">Купить абонемент</button>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
   </body>
 
 </html>

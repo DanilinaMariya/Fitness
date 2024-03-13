@@ -1,0 +1,67 @@
+.button {
+  padding: 25px;
+  background-color: transparent;
+  border: 2px solid $color-primary;
+  color: $color-primary;
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+
+  &:hover:not(:disabled){
+    background-image: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+    color: $color-white;
+    border: none;
+  }
+
+  &:focus:not(:disabled){
+    border: 2px solid #000;
+    outline: none;
+    background-image: linear-gradient(97deg, rgba(237, 2, 51, 0.80) 17.6%, rgba(0, 62, 183, 0.80) 95.31%);
+  }
+
+  &:active:not(:disabled) {
+    background-image: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+  }
+
+  &:disabled {
+    border: 2px solid $color-primary;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding: 27px;
+  }
+}
+
+.button--light {
+  border-color: $color-white;
+  color: $color-white;
+
+  &:hover:not(:disabled){
+    background-color: $color-white;
+    background-image: none;
+    color: $color-text-blue;
+  }
+
+  &:focus:not(:disabled) {
+    border: 2px solid #000000;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.80);
+    color: $color-text-blue;
+  }
+
+  &:active:not(:disabled) {
+    border: none;
+    background-color: $color-white;
+    color: $color-primary;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    opacity: 0.5;
+  }
+}
