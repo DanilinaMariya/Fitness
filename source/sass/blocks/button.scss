@@ -8,6 +8,8 @@
   font-weight: 700;
   line-height: 12px;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
 
   &:hover:not(:disabled){
     background-image: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);

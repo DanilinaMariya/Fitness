@@ -21,7 +21,7 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <div class="hero__wrapper wrapper">
           <h1 class="hero__title">Фитнес центр</h1>
           <span class="hero__city">Омск</span>
@@ -32,9 +32,32 @@
               <img class="hero__img" src="img/hero.jpg" srcset="img/hero.jpg 1x, img/hero@2x.jpg 2x" width="324" height="390" alt="мужчина в футболке супермена.">
             </picture>
           </div>
-
-          <button class="hero__button button button--light">Купить абонемент</button>
+          <a class="hero__button button button--light" href="#price">Купить абонемент</a>
         </div>
+      </section>
+      <section class="about wrapper" data-test="about">
+        <div class="about__info">
+          <h2 class="about__title">Тренажёрный зал</h2>
+        <span class="about__description">Просторный зал площадью 900 кв/м</span>
+        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+        </div>
+        <div class="about__images">
+          <picture>
+            <source type="images/webp"  media="(min-width: 768px)" srcset="img/about.webp 1x, img/about@2x.webp 2x" width="678" height="345">
+            <source media="(min-width: 768px)" srcset="img/about.jpg 1x, img/about@2x.jpg 2x" width="678" height="345">
+            <source type="images/webp" srcset="img/about-phone.webp 1x, img/about-phone@2x.webp 2x" width="320" height="280">
+            <img class="about__img" src="img/about-phone.jpg" srcset="img/about-phone.jpg 1x img/about-phone@2x.jpg 2x" width="320" height="280" alt="Просторный зал площадью 900 кв/м.">
+          </picture>
+          <div class="about__video">
+            <source type="images/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x" width="320" height="170">
+            <img class="about__video-img" src="img/video.jpg" srcset="img/video.jpg 1x img/video@2x.jpg 2x" width="320" height="170" alt="Видео о тренажерном зале.">
+            <button class="about__button-play" aria-label="Запустить видео о тренажерном зале.">
+              <svg class="about__icon" width="13" height="15">
+                <use href="/__spritemap#sprite-play"></use>
+              </svg>
+            </button>
+          </div>
+      </div>
       </section>
     </main>
     <script src="js/main.js"></script>
