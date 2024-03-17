@@ -10,20 +10,23 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  box-sizing: border-box;
+  height: 66px;
 
-  &:hover:not(:disabled){
+
+  &:hover {
     background-image: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
     color: $color-white;
     border: none;
   }
 
-  &:focus:not(:disabled){
-    border: 2px solid #000;
+  &:focus {
+    border: 2px solid #000000;
     outline: none;
     background-image: linear-gradient(97deg, rgba(237, 2, 51, 0.80) 17.6%, rgba(0, 62, 183, 0.80) 95.31%);
   }
 
-  &:active:not(:disabled) {
+  &:active {
     background-image: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
     color: rgba(255, 255, 255, 0.8);
     border: none;
@@ -42,28 +45,36 @@
 .button--light {
   border-color: $color-white;
   color: $color-white;
+  padding: 22px;
+  height: 60px;
 
-  &:hover:not(:disabled){
+  &:hover {
     background-color: $color-white;
     background-image: none;
     color: $color-text-blue;
   }
 
-  &:focus:not(:disabled) {
+  &:focus {
     border: 2px solid #000000;
     outline: none;
     background-color: rgba(255, 255, 255, 0.80);
     color: $color-text-blue;
+    background-image: none;
   }
 
-  &:active:not(:disabled) {
+  &:active {
     border: none;
     background-color: $color-white;
+    background-image: none;
     color: $color-primary;
   }
 
   &:disabled {
     background-color: transparent;
     opacity: 0.5;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 27px;
   }
 }
