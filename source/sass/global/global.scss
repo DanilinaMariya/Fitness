@@ -14,17 +14,17 @@
 .wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 16px 15px;
+  padding: 40px 15px;
   box-sizing: border-box;
 
   @media (min-width: $width-tablet) {
     width: $width-tablet;
-    padding: 30px 45px;
+    padding: 60px 45px;
   }
 
   @media (min-width: $width-desktop) {
     width: $width-desktop;
-    padding: 30px 103px;
+    padding: 100px 103px;
   }
 }
 

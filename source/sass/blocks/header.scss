@@ -6,6 +6,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .header__phone {
@@ -15,6 +22,26 @@
   text-decoration: none;
   text-transform: none;
   color: $color-white;
+  box-sizing: border-box;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    color: rgba(28, 51, 116, 0.50);
+  }
+
+  &:focus {
+    color: $color-blue;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
 
   @media (min-width: $width-tablet) {
     font-size: 24px;
@@ -27,14 +54,3 @@
   }
 }
 
-.header__logo {
-  @media (min-width: $width-tablet) {
-    width: 110px;
-    height: 22px;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: 130px;
-    height: 26px;
-  }
-}
