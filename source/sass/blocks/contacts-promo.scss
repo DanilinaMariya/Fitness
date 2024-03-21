@@ -1,0 +1,96 @@
+.contacts-promo {
+  padding-top: 40px;
+
+  @media (min-width: $width-tablet) {
+    padding: 60px 164px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 683px;
+    padding: 60px 103px;
+  }
+}
+
+.contacts-promo__title {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    font-size: 54px;
+    line-height: 54px;
+    text-align: center;
+  }
+
+  @media (min-width: $width-desktop) {
+    text-align: left;
+  }
+}
+
+.contacts-promo__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 0;
+  margin: 0;
+  padding-top: 42px;
+  list-style: none;
+
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 190px 190px;
+    grid-template-rows: auto auto;
+    row-gap: 15px;
+    column-gap: 60px;
+    padding-top: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 36px;
+      bottom: 0;
+      width: 1px;
+      height: auto;
+      background-color: #74819c;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: 178px 178px;
+    column-gap: 120px;
+  }
+}
+
+.contacts-promo__subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  padding-bottom: 12px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 5px;
+  }
+}
+
+.contacts-promo__description {
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color-primary;
+  text-decoration: none;
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    line-height: 22px;
+  }
+}

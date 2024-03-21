@@ -7,6 +7,7 @@
 @import "./global/fonts.scss";
 @import "./global/variables.scss";
 @import "./global/global.scss";
+@import "./global/visually-hidden.scss";
 
 /* BLOCKS */
 @import "./blocks/header.scss";
@@ -20,3 +21,6 @@
 @import "./blocks/footer.scss";
 @import "./blocks/footer-nav.scss";
 @import "./blocks/socials.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/form.scss";
+@import "./blocks/contacts-promo.scss";

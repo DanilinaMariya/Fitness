@@ -51,7 +51,7 @@
           <div class="about__video">
             <source type="images/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x" width="320" height="170">
             <img class="about__video-img" src="img/video.jpg" srcset="img/video.jpg 1x img/video@2x.jpg 2x" width="320" height="170" alt="Видео о тренажерном зале.">
-            <button class="about__button-play" aria-label="Запустить видео о тренажерном зале.">
+            <button class="about__button-play" type="button" aria-label="Запустить видео о тренажерном зале.">
               <svg class="about__icon" width="13" height="15">
                 <use href="/__spritemap#sprite-play"></use>
               </svg>
@@ -64,13 +64,13 @@
           <h2 class="price__title">Абонементы</h2>
           <ul class="price__tabs-list">
             <li class="price__tab">
-              <button class="price__button price__button--activ" data-period="month">1 месяц</button>
+              <button class="price__button price__button--activ" type="button" data-period="month">1 месяц</button>
             </li>
             <li class="price__tab">
-              <button class="price__button" data-period="half-year">6 месяцев</button>
+              <button class="price__button" type="button" data-period="half-year">6 месяцев</button>
             </li>
             <li class="price__tab">
-              <button class="price__button" data-period="year">12 месяцев</button>
+              <button class="price__button" type="button" data-period="year">12 месяцев</button>
             </li>
           </ul>
           <div class="price__wrapper">
@@ -216,6 +216,49 @@
           <source type="images/webp" srcset="img/games.webp 1x, img/games@2x.webp 2x" width="290" height="290">
           <img class="games__img" src="img/games.jpg" srcset="img/games.jpg 1x img/games@2x.jpg 2x" width="290" height="290" alt="соревнования по CrossFit.">
         </picture>
+      </section>
+      <section class="promo">
+        <div class="promo__wrapper">
+          <form class="promo__form form" action="https://echo.htmlacademy.ru/" method="post" data-test="form">
+            <div class="form__conteiner">
+              <h2 class="form__title">Бесплатное занятие</h3>
+                <div class="form__wrapper">
+                  <label class="form__label">
+                    <span class="visually-hidden">Ваше имя</span>
+                    <input class="form__input" type="text" name="name" maxlength="16" placeholder="Имя" required>
+                    <span class="form__error"></span>
+                  </label>
+                  <label class="form__label">
+                    <span class="visually-hidden">Ваш телефон</span>
+                    <input class="form__input" type="tel" name="phone" placeholder="Телефон" required>
+                    <span class="form__error"></span>
+                  </label>
+                </div>
+              <button class="form_button button button--light" type="submit">отправить</button>
+            </div>
+          </form>
+          <div class="promo__contacts contacts-promo wrapper">
+            <h2 class="contacts-promo__title">Контакты</h2>
+            <ul class="contacts-promo__list">
+              <li class="contacts-promo__item">
+                <h3 class="contacts-promo__subtitle">Адрес:</h3>
+                <address class="contacts-promo__description">г. Омск, ул. 60 лет Октября, 7</address>
+              </li>
+              <li class="contacts-promo__item">
+                <h3 class="contacts-promo__subtitle">График работы:</h3>
+                <p class="contacts-promo__description">Пн-Вс: с 8:00 до 22:00</address>
+              </li>
+              <li class="contacts-promo__item">
+                <h3 class="contacts-promo__subtitle">Телефон:</h3>
+                <a class="contacts-promo__description" href="tel:+78005555555">8 800 555-55-55</a>
+              </li>
+              <li class="contacts-promo__item">
+                <h3 class="contacts-promo__subtitle">Email:</h3>
+                <a class="contacts-promo__description" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <footer class="footer" data-test="footer">
         <div class="footer__wrapper wrapper">
