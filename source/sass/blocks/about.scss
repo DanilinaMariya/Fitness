@@ -24,23 +24,15 @@
   }
 }
 .about__title {
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 32px;
-  margin: 0;
   padding-bottom: 12px;
+  text-align: left;
 
   @media (min-width: $width-tablet) {
-    font-size: 42px;
-    line-height: 42px;
     text-align: center;
     padding-bottom: 20px;
   }
 
   @media (min-width: $width-desktop) {
-    font-size: 52px;
-    line-height: 52px;
     text-align: left;
     padding-bottom: 25px;
   }

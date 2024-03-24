@@ -4,6 +4,6 @@
 // import 'swiper/css';
 const socialsLink = document.querySelector('.isDisabled');
 
-socialsLink.addEventListener('click',(event) => {
-  event.preventDefault();
-});
+// socialsLink.addEventListener('click',(event) => {
+//   event.preventDefault();
+// });

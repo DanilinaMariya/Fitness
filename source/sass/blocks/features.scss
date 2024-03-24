@@ -1,0 +1,234 @@
+.features{
+  background-color: $color-grey;
+
+}
+
+.features__conteiner {
+  padding: 40px 0;
+  box-sizing: border-box;
+
+  @media (min-width: $width-tablet) {
+    padding: 60px 45px;
+    width: $width-tablet;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 100px 103px 20px;
+    width: $width-desktop;
+  }
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 35px;
+  list-style: none;
+  padding: 0;
+  padding-top: 40px;
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 324px 325px;
+    grid-template-rows: auto auto auto;
+    gap: 40px 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: 360px 360px 360px;
+    grid-auto-rows:auto;
+    grid-auto-flow: column;
+    row-gap: 80px;
+  }
+}
+
+.features__item {
+  text-align: center;
+  box-sizing: border-box;
+
+  @media (max-width: 767px) {
+    width: 320px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    &--dark {
+      width: 100%;
+      margin: 10px 0;
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 14px;
+    text-align: left;
+  }
+
+  @media (min-width: $width-desktop) {
+    column-gap: 43px;
+    min-height: 110px;
+    position: relative;
+
+    &--light::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -40px;
+      height: 2px;
+      background-color: rgba(209, 10, 66, 0.20);
+    }
+
+    &:not(.features__item--dark):nth-child(1),
+    &:not(.features__item--dark):nth-child(4),
+    &:not(.features__item--dark):nth-child(1n + 5),
+    &:not(.features__item--dark):nth-child(4n + 5)  {
+      grid-column: 1 / 2;
+    }
+
+    &:not(.features__item--dark):nth-child(2),
+    &:not(.features__item--dark):nth-child(5),
+    &:not(.features__item--dark):nth-child(2n + 5),
+    &:not(.features__item--dark):nth-child(5n + 5) {
+      grid-column: 3 / 4;
+    }
+
+    &--light:first-child,
+    &--light:nth-child(2) {
+      &::after {
+        content: none;
+      }
+    }
+  }
+}
+
+.features__item p:first-child {
+  display: block;
+  width: fit-content;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  margin: 0 auto;
+  background-color: #0041ca; //чтобы если градиент не сработает, техт не останется проздачным
+  background-image: linear-gradient(128deg, $color-dark-rad 0%, #0041ca 45.58%);
+  background-clip: text;
+  color: transparent;
+
+  @media (min-width: $width-tablet) {
+    font-size: 70px;
+    line-height: 70px;
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+}
+
+.features__item span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #0041ca;
+
+  @media (min-width: $width-tablet) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+}
+
+.features__item h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  padding: 12px 0;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding-top: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.features__item h3 + p {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+  }
+}
+
+.features__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 30px 75px 40px;
+  margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    padding: 35px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 58px 40px;
+  }
+}
+
+.features__item--dark {
+  background: $color-primary;
+  color: $color-white;
+
+
+  @media (min-width: $width-tablet) {
+    width: 320px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-column: 2 / 3;
+    grid-row: span 2;
+  }
+}
+
+.features__item--dark p:first-child {
+  color: $color-white;
+  background: none;
+
+
+  @media (min-width: $width-tablet) {
+    margin: 0 auto;
+  }
+}
+
+.features__item--dark  h3 {
+  padding-top: 5px ;
+  padding-bottom: 20px;
+
+  @media (min-width: $width-tablet) {
+    padding: 25px 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 26px;
+    line-height: 26px;
+    padding-top: 5px ;
+    padding-bottom: 10px;
+  }
+}
