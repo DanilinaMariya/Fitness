@@ -40,6 +40,7 @@
 }
 
 .offers__link {
+  position: relative;
   display: block;
   width: fit-content;
   font-family: "Roboto Condensed";
@@ -48,18 +49,53 @@
   line-height: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #74819c;
   color: $color-blue;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 1px;
+    background-color: #74819c;
+  }
+
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 1px solid $color-blue;
+    outline-offset: 10px;
+
+    &::after {
+      background-color: transparent;
+    }
+  }
 
   &--light {
     color: $color-white;
-    border-bottom-color: $color-white;
+
+    &::after {
+      background-color: $color-white;
+    }
+
+    &:focus {
+      outline-color: $color-white;
+    }
   }
+
 
   @media (min-width: $width-tablet) {
     margin-top: auto;
   }
+}
+
+.isDisabled {
+  opacity: 0.5;
 }
 
 .offers__conteiner {

@@ -61,7 +61,7 @@
           </div>
       </div>
       </section>
-      <section class="price" data-test="price">
+      <section class="price" data-test="price" id="price">
         <div class="wrapper">
           <h2 class="price__title title">Абонементы</h2>
           <ul class="price__tabs-list">
@@ -258,6 +258,7 @@
         </div>
       </section>
       <section class="offers" data-test="offers">
+        <!-- .isDisabled - класс для отключения ссылок aria-disabled="true" необходимо добавлять в ручную -->
         <h2 class="offers__title title">Акции</h2>
         <div class="offers__content">
           <div class="offers__preview">
@@ -299,12 +300,12 @@
                   <label class="form__label">
                     <span class="visually-hidden">Ваше имя</span>
                     <input class="form__input" type="text" name="name" maxlength="16" placeholder="Имя" required>
-                    <span class="form__error"></span>
+                    <span class="form__error">Пожалуйста, вводите только буквы</span>
                   </label>
                   <label class="form__label">
                     <span class="visually-hidden">Ваш телефон</span>
                     <input class="form__input" type="tel" name="phone" placeholder="Телефон" required>
-                    <span class="form__error"></span>
+                    <span class="form__error">Пожалуйста, вводите только цифры</span>
                   </label>
                 </div>
               <button class="form_button button button--light" type="submit">отправить</button>
@@ -382,7 +383,7 @@
         </div>
       </footer>
     </main>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 
 </html>
