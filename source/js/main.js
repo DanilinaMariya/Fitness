@@ -6,3 +6,4 @@ import './link-disabled';
 import './price';
 import './form';
 import './faq';
+import './iframe';
