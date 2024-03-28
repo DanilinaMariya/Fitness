@@ -1,0 +1,264 @@
+.faq {
+  background-color: $color-grey;
+  padding: 20px 0;
+
+  @media (min-width: $width-tablet) {
+    padding: 0;
+  }
+}
+
+.faq__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  @media (min-width: $width-tablet) {
+    gap: 45px;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: grid;
+    grid-template-columns: 260px auto;
+    gap: 50px 40px;
+  }
+}
+
+.faq__title {
+  @media (min-width: $width-desktop) {
+    text-align: start;
+    grid-column: 1 / -1;
+  }
+}
+
+.faq__buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: min-content;
+  gap: 10px;
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: 100%;
+    grid-column:  1 / 2;
+  }
+}
+
+.faq__info {
+  @media (min-width: $width-desktop) {
+    grid-column: 2 / 3;
+  }
+}
+
+.faq__button {
+  font-family: "Roboto Condensed", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $color-primary;
+  padding: 14px 23px;
+  border: 1px solid rgba(16, 38, 84, 0.20);
+  background-color: transparent;
+  box-sizing: border-box;
+
+  &--activ,
+  &:active {
+    background-image: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+    border:none;
+    padding: 15px 23px;
+    color: $color-white;
+  }
+
+  &:hover {
+    border-color: $color-primary;
+  }
+
+  &:focus {
+    border-color: transparent;
+    outline: 1px solid $color-primary;
+    outline-offset: -1px;
+  }
+
+  &:disabled {
+    color: #c8c9cc;
+    background: transparent;
+    border: 1px solid rgba(16, 38, 84, 0.20);
+  }
+
+  @media (min-width: $width-tablet) {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 17px 48px;
+
+    &--activ,
+    &:active {
+      padding: 18px 48px;
+    }
+  }
+}
+
+.faq__box {
+  position: relative;
+  display: none;
+
+  &--activ {
+    display: block;
+  }
+}
+
+.faq__control {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 1px solid $color-blue;
+  background-color: transparent;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    height: 1px;
+    width: 14px;
+    background-color: $color-blue;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 7px;
+    height: 14px;
+    width: 1px;
+    background-color: $color-blue;
+  }
+
+  &:hover {
+    background-color: $color-blue;
+
+    &::after,
+    &::before {
+      background-color: $color-white;
+    }
+  }
+
+  &:focus {
+    background-color: #74819c;
+    outline: none;
+
+    &::after,
+    &::before {
+      background-color: $color-white;
+    }
+  }
+
+  &--activ {
+    background-color: $color-blue;
+
+    &::after {
+      background-color: $color-white;
+    }
+
+    &::before {
+      content: none;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    background-color: transparent;
+
+    &::after,
+    &::before {
+      background-color: $color-blue;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+
+    &::after {
+      left: 9px;
+      width: 20px;
+    }
+
+    &::before {
+      top: 9px;
+      height: 20px;
+    }
+  }
+}
+
+.faq__content {
+  padding: 20px 0;
+  border-bottom: 1px solid #74819c;
+
+  &:first-child {
+    border-top: 1px solid #74819c;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding: 25px 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 23px 0;
+  }
+}
+
+.faq__content h3 {
+  width: 238px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    font-size: 22px;
+    line-height: 22px;
+    padding: 8px 0;
+    width: 500px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 24px;
+    line-height: 24px;
+    width: 660px;
+  }
+}
+
+.faq__hidden p {
+  font-family: "Roboto Condensed", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0;
+  padding-top: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $width-tablet) {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 23px;
+  }
+}
+
+.faq__visible {
+  position: relative;
+}
+
+.faq__hidden {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.7s ease-in-out;
+}

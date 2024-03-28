@@ -195,8 +195,9 @@
   padding-top: 0;
   padding-bottom: 0;
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: $width-tablet) {
     padding: 0;
+    width: 100%;
   }
 }
 
