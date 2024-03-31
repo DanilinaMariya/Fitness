@@ -107,6 +107,6 @@
 
 .card-prise:focus-within,
 .card-prise:has(> .card-prise__link:hover) {
-  border-image: linear-gradient(#d10a42, #00359f);
+  border-image: linear-gradient(150deg, #d10a42, #00359f);
   border-image-slice: 1;
 }

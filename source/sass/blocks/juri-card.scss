@@ -1,0 +1,97 @@
+.juri-card {
+  width: 227px;
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 260px;
+  }
+}
+
+.juri-card__title {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  color: $color-white;
+  margin: 0;
+  z-index: 10;
+}
+
+.juri-card__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.juri-card__hidden {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 47px 42px 45px;
+  background-color: rgba(16, 38, 84, 0.89);
+  color: $color-white;
+
+  @media (min-width: $width-tablet) {
+    padding: 67px 42px 45px;
+  }
+}
+
+.juri-card:hover .juri-card__hidden,
+.juri-card:active .juri-card__hidden {
+  display: block;
+}
+
+.juri-card:hover .juri-card__title,
+.juri-card:active .juri-card__title{
+  top: 25px ;
+
+  @media (min-width: $width-tablet) {
+    top: 45px
+  }
+}
+
+.juri-card__profession {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.juri-card__achievement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  padding-top: 23px;
+  list-style-position: inside;
+
+
+  &::marker {
+    margin-right: 10px;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding-top: 33px;
+  }
+}
+
+.juri-card__achievement {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}

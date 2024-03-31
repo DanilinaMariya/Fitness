@@ -15,7 +15,7 @@
 
 
   &:hover {
-    background-image: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+    background-image: linear-gradient(120deg, #ED0233 17.6%, #003EB7 95.31%);
     color: $color-white;
     border: none;
   }
@@ -23,11 +23,11 @@
   &:focus {
     border: 2px solid #000000;
     outline: none;
-    background-image: linear-gradient(97deg, rgba(237, 2, 51, 0.80) 17.6%, rgba(0, 62, 183, 0.80) 95.31%);
+    background-image: linear-gradient(120deg, rgba(237, 2, 51, 0.80) 17.6%, rgba(0, 62, 183, 0.80) 95.31%);
   }
 
   &:active {
-    background-image: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+    background-image: linear-gradient(120deg, #ED0233 17.6%, #003EB7 95.31%);
     color: rgba(255, 255, 255, 0.8);
     border: none;
   }
