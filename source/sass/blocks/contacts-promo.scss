@@ -1,5 +1,6 @@
 .contacts-promo {
-  padding-top: 40px;
+  padding-top: 37px;
+  padding-bottom: 39px;
 
   @media (min-width: $width-tablet) {
     padding: 60px 164px;
@@ -8,13 +9,17 @@
   @media (min-width: $width-desktop) {
     width: 683px;
     padding: 60px 103px;
+    border-top: 1px solid #74819c;
   }
 }
 
 .contacts-promo__title {
+  text-align: left;
+
   @media (min-width: $width-tablet) {
     font-size: 54px;
     line-height: 54px;
+    text-align: center;
   }
 
   @media (min-width: $width-desktop) {
@@ -27,10 +32,10 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 28px;
+  gap: 27px;
   padding: 0;
   margin: 0;
-  padding-top: 42px;
+  padding-top: 37px;
   list-style: none;
 
   @media (min-width: $width-tablet) {
@@ -64,7 +69,7 @@
   font-weight: 400;
   line-height: 20px;
   margin: 0;
-  padding-bottom: 12px;
+  padding-bottom: 13px;
 
   @media (min-width: $width-tablet) {
     font-size: 24px;
@@ -74,7 +79,8 @@
 }
 
 .contacts-promo__description {
-  font-family: "Roboto Condensed";
+  display: block;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -85,5 +91,14 @@
 
   @media (min-width: $width-tablet) {
     line-height: 22px;
+  }
+}
+
+.contacts-promo__item {
+  @media (min-width: $width-tablet) {
+    &:nth-child(2) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
   }
 }

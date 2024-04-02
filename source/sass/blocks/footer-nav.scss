@@ -1,7 +1,7 @@
 .footer-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 15px;
+  gap: 16px 15px;
   list-style: none;
   padding: 0;
   box-sizing: border-box;
@@ -16,7 +16,8 @@
 
   @media (min-width: $width-desktop) {
     flex-direction: row;
-    width: 600px;
+    width: 670px;
+    gap: 10px 62px;
     justify-content: space-between;
   }
 }
@@ -28,7 +29,6 @@
   color: $color-white;
   text-decoration: none;
   padding: 5px 10px;
-  border: 1px solid transparent;
   position: relative;
 
   &:hover {
@@ -44,8 +44,7 @@
   }
 
   &:focus {
-    border-color: $color-white;
-    outline: none;
+    outline: 1px solid $color-white;
   }
 
   &:active {

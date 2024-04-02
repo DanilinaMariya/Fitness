@@ -13,7 +13,7 @@
 
 .juri-card__title {
   position: absolute;
-  bottom: 25px;
+  bottom: 24px;
   left: 0;
   right: 0;
   font-size: 22px;
@@ -25,10 +25,18 @@
   z-index: 10;
 }
 
+.juri-card__images {
+  height: 280px;
+
+  @media (min-width: $width-tablet) {
+    height: 300px;
+  }
+}
+
 .juri-card__img {
   display: block;
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -54,11 +62,11 @@
 }
 
 .juri-card:hover .juri-card__title,
-.juri-card:active .juri-card__title{
-  top: 25px ;
+.juri-card:active .juri-card__title {
+  top: 25px;
 
   @media (min-width: $width-tablet) {
-    top: 45px
+    top: 45px;
   }
 }
 

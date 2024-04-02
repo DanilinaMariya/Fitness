@@ -10,7 +10,6 @@ const createIframe = () => {
   iframe.setAttribute('allowfullscreen', 'allowfullscreen');
   iframe.setAttribute('allow', 'autoplay');
 
-
   return iframe;
 };
 

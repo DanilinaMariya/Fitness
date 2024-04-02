@@ -1,5 +1,5 @@
 .about {
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     padding-left: 0;
     padding-right: 0;
   }
@@ -10,7 +10,7 @@
 
   @media (min-width: $width-desktop) {
     display: flex;
-    gap: 145px;
+    gap: 144px;
     padding-top: 120px;
     padding-bottom: 240px;
   }
@@ -23,6 +23,7 @@
     padding: 0;
   }
 }
+
 .about__title {
   padding-bottom: 12px;
   text-align: left;
@@ -34,7 +35,7 @@
 
   @media (min-width: $width-desktop) {
     text-align: left;
-    padding-bottom: 25px;
+    padding-bottom: 26px;
   }
 }
 
@@ -73,9 +74,18 @@
   }
 
   @media (min-width: $width-desktop) {
-    width: 355px;
-    padding: 95px 0 0;
+    width: 356px;
+    padding: 94px 0 8px;
     text-align: left;
+  }
+}
+
+.about p + p {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    display: inline-block;
+    padding: 0;
   }
 }
 
@@ -113,15 +123,15 @@
     width: 270px;
     position: absolute;
     left: 50%;
-    bottom: -50%;
-    transform: translate(-50%, -50%);
+    bottom: -85px;
+    transform: translateX(-50%);
   }
 
   @media (min-width: $width-desktop) {
     width: 360px;
     height: 230px;
-    left: 70px;
-    bottom: -58%;
+    left: 80px;
+    bottom: -115px;
   }
 }
 
@@ -142,52 +152,52 @@
   border: 2px solid rgb(237, 2, 51, 0.2);
   background-color: transparent;
 
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-image: linear-gradient(90deg, #ed0233, #003eb7);
+  }
+
+  &:hover {
+    border-color: rgba(16, 38, 84, 0.6);
+
     &::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      background-image: linear-gradient(90deg, #ed0233, #003eb7);
+      background: $color-white;
     }
+  }
 
-    &:hover {
-      border-color: rgba(16, 38, 84, 0.6);
+  &:focus,
+  &:active {
+    border-color: $color-primary;
+    outline: none;
 
-      &::after {
-        background: $color-white;
-      }
+    &::after {
+      background: #c8c9cc;
     }
+  }
 
-    &:focus,
-    &:active {
-      border-color: $color-primary;
-      outline: none;
-
-      &::after {
-        background: #c8c9cc;
-      }
+  &:active {
+    &::after {
+      width: 38px;
+      height: 38px;
+      background: $color-white;
     }
+  }
 
-    &:active {
-      &::after {
-        width: 38px;
-        height: 38px;
-        background: $color-white;
-      }
+  &:disabled {
+    border-color: $color-primary;
+    opacity: 0.6;
+
+    &::after {
+      background: $color-white;
     }
-
-    &:disabled {
-      border-color: $color-primary;
-      opacity: 0.6;
-
-      &::after {
-        background: $color-white;
-      }
-    }
+  }
 
   @media (min-width: $width-desktop) {
     width: 100px;

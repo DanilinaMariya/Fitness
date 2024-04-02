@@ -1,6 +1,6 @@
 .faq {
   background-color: $color-grey;
-  padding: 20px 0;
+  padding: 30px 0;
 
   @media (min-width: $width-tablet) {
     padding: 0;
@@ -19,7 +19,7 @@
   @media (min-width: $width-desktop) {
     display: grid;
     grid-template-columns: 260px auto;
-    gap: 50px 40px;
+    gap: 49px 40px;
   }
 }
 
@@ -36,9 +36,14 @@
   grid-auto-rows: min-content;
   gap: 10px;
 
+  @media (min-width: $width-tablet) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   @media (min-width: $width-desktop) {
     grid-template-columns: 100%;
-    grid-column:  1 / 2;
+    grid-column: 1 / 2;
+    padding-top: 1px;
   }
 }
 
@@ -49,20 +54,20 @@
 }
 
 .faq__button {
-  font-family: "Roboto Condensed", serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   color: $color-primary;
   padding: 14px 23px;
-  border: 1px solid rgba(16, 38, 84, 0.20);
+  border: 1px solid rgba(16, 38, 84, 0.2);
   background-color: transparent;
   box-sizing: border-box;
 
   &--activ,
   &:active {
-    background-image: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
-    border:none;
+    background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+    border: none;
     padding: 15px 23px;
     color: $color-white;
   }
@@ -80,17 +85,17 @@
   &:disabled {
     color: #c8c9cc;
     background: transparent;
-    border: 1px solid rgba(16, 38, 84, 0.20);
+    border: 1px solid rgba(16, 38, 84, 0.2);
   }
 
   @media (min-width: $width-tablet) {
     font-size: 18px;
     line-height: 18px;
-    padding: 17px 48px;
+    padding: 17px 28px;
 
     &--activ,
     &:active {
-      padding: 18px 48px;
+      padding: 18px 28px;
     }
   }
 }
@@ -139,43 +144,11 @@
 
   &:hover {
     background-color: $color-blue;
-
-    &::after,
-    &::before {
-      background-color: $color-white;
-    }
   }
 
   &:focus {
     background-color: #74819c;
     outline: none;
-
-    &::after,
-    &::before {
-      background-color: $color-white;
-    }
-  }
-
-  &--activ {
-    background-color: $color-blue;
-
-    &::after {
-      background-color: $color-white;
-    }
-
-    &::before {
-      content: none;
-    }
-  }
-
-  &:disabled {
-    opacity: 0.3;
-    background-color: transparent;
-
-    &::after,
-    &::before {
-      background-color: $color-blue;
-    }
   }
 
   @media (min-width: $width-tablet) {
@@ -195,6 +168,36 @@
   }
 }
 
+.faq__control:hover,
+.faq__control:focus {
+  &::after,
+  &::before {
+    background-color: $color-white;
+  }
+}
+
+.faq__control:disabled {
+  opacity: 0.3;
+  background-color: transparent;
+
+  &::after,
+  &::before {
+    background-color: $color-blue;
+  }
+}
+
+.faq__control--activ {
+  background-color: $color-blue;
+
+  &::after {
+    background-color: $color-white;
+  }
+
+  &::before {
+    content: none;
+  }
+}
+
 .faq__content {
   padding: 20px 0;
   border-bottom: 1px solid #74819c;
@@ -204,11 +207,19 @@
   }
 
   @media (min-width: $width-tablet) {
-    padding: 25px 0;
+    padding: 26px 0;
+
+    &:last-child {
+      padding: 25px 0;
+    }
   }
 
   @media (min-width: $width-desktop) {
-    padding: 23px 0;
+    padding: 23px 0 22px;
+
+    &:last-child {
+      padding: 23px 0 22px;
+    }
   }
 }
 
@@ -233,8 +244,14 @@
   }
 }
 
+.faq__content:last-child h3 {
+  @media (min-width: $width-tablet) and (width <= 1365px) {
+    padding: 0;
+  }
+}
+
 .faq__hidden p {
-  font-family: "Roboto Condensed", serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 20px;
@@ -246,10 +263,12 @@
     font-size: 18px;
     line-height: 24px;
     padding-top: 10px;
+    width: 560px;
   }
 
   @media (min-width: $width-desktop) {
     padding-top: 23px;
+    width: 658px;
   }
 }
 
@@ -261,4 +280,20 @@
   height: 0;
   overflow: hidden;
   transition: height 0.7s ease-in-out;
+}
+
+.faq__hidden br {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    display: inline;
+  }
+}
+
+.faq__content:last-child br {
+  display: inline;
+
+  @media (min-width: $width-desktop) {
+    display: none;
+  }
 }

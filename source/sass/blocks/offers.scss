@@ -9,11 +9,13 @@
     width: $width-tablet;
     margin: 0 auto;
     padding: 60px 45px;
+    gap: 35px;
   }
 
   @media (min-width: $width-desktop) {
     width: $width-desktop;
     padding: 100px 103px;
+    gap: 70px;
   }
 }
 
@@ -22,8 +24,13 @@
   flex-direction: column;
   gap: 40px;
 
+  @media (min-width: $width-tablet) {
+    gap: 35px;
+  }
+
   @media (min-width: $width-desktop) {
     flex-direction: row;
+    gap: 40px;
   }
 }
 
@@ -35,7 +42,7 @@
 
   @media (min-width: $width-tablet) {
     flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
   }
 }
 
@@ -43,7 +50,7 @@
   position: relative;
   display: block;
   width: fit-content;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
@@ -51,6 +58,7 @@
   text-decoration: none;
   color: $color-blue;
   box-sizing: border-box;
+  margin-bottom: 6px;
 
   &::after {
     content: "";
@@ -76,25 +84,31 @@
     }
   }
 
-  &--light {
-    color: $color-white;
-
-    &::after {
-      background-color: $color-white;
-    }
-
-    &:focus {
-      outline-color: $color-white;
-    }
-  }
-
-
   @media (min-width: $width-tablet) {
     margin-top: auto;
+    margin-bottom: 5px;
   }
 }
 
-.isDisabled {
+.offers__link--light {
+  color: $color-white;
+
+  &::after {
+    background-color: $color-white;
+  }
+
+  &:focus {
+    outline-color: $color-white;
+  }
+}
+
+.offers__link.is-disabled {
+  opacity: 0.3;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.offers__link--light.is-disabled {
   opacity: 0.5;
 }
 
@@ -114,7 +128,7 @@
     width: 100%;
     min-height: 462px;
     text-align: start;
-    align-items: start;
+    align-items: flex-start;
   }
 
   @media (min-width: $width-desktop) {
@@ -125,7 +139,7 @@
 }
 
 .offers__conteiner h2 {
-  font-family: "Roboto Condensed", serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
@@ -135,6 +149,7 @@
   @media (min-width: $width-tablet) {
     font-size: 24px;
     line-height: 24px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $width-desktop) {
@@ -143,7 +158,8 @@
   }
 }
 
-.offers__conteiner span{
+.offers__conteiner span {
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 64px;
   font-weight: 700;
   line-height: 64px;
@@ -156,6 +172,7 @@
 }
 
 .offers__conteiner p {
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   line-height: 20px;
   margin: 0;
@@ -164,7 +181,7 @@
   @media (min-width: $width-tablet) {
     font-size: 18px;
     line-height: 24px;
-    padding: 45px 0;
+    padding: 40px 0;
   }
 }
 
@@ -180,14 +197,6 @@
 
   @media (min-width: $width-tablet) {
     margin: 0;
-    width: 400px;
-    height: 462px;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: 280px;
-    height: 100%;
-    object-fit: cover;
   }
 }
 
@@ -206,13 +215,12 @@
   flex-direction: column;
   flex-wrap: wrap;
   list-style: none;
-  gap: 20px;
+  gap: 30px;
   padding: 0;
   margin: 0;
 
   @media (min-width: $width-tablet) {
     flex-direction: row;
-    gap: 30px;
     justify-content: space-between;
   }
 
@@ -236,7 +244,7 @@
   border-image-slice: 1;
 
   @media (min-width: $width-tablet) {
-    align-items: start;
+    align-items: flex-start;
     text-align: start;
     width: 324px;
     gap: 0;
@@ -248,6 +256,7 @@
 }
 
 .offers__item h2 {
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
@@ -261,19 +270,20 @@
 }
 
 .offers__item p {
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   line-height: 22px;
   color: $color-blue;
   margin: 0;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 30px;
+    padding-bottom: 31px;
     padding-top: 10px;
   }
 
   @media (min-width: $width-desktop) {
-    padding-bottom: 40px;
+    padding-bottom: 41px;
   }
 }

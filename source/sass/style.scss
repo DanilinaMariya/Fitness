@@ -3,33 +3,34 @@
 
 @import "vendor/normalize";
 @import "vendor/swiper";
+
 /* GLOBAL */
-@import "./global/fonts.scss";
-@import "./global/variables.scss";
-@import "./global/global.scss";
-@import "./global/title.scss";
-@import "./global/visually-hidden.scss";
+@import "./global/fonts";
+@import "./global/variables";
+@import "./global/global";
+@import "./global/button";
+@import "./global/title";
+@import "./global/visually-hidden";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
-@import "./blocks/logo.scss";
-@import "./blocks/hero.scss";
-@import "./blocks/button.scss";
-@import "./blocks/about.scss";
-@import "./blocks/price.scss";
-@import "./blocks/card-prise.scss";
-@import "./blocks/games.scss";
-@import "./blocks/juri.scss";
-@import "./blocks/juri-card.scss";
-@import "./blocks/slider-juri.scss";
-@import "./blocks/features.scss";
-@import "./blocks/offers.scss";
-@import "./blocks/faq.scss";
-@import "./blocks/reviews.scss";
-@import "./blocks/slider.scss";
-@import "./blocks/promo.scss";
-@import "./blocks/form.scss";
-@import "./blocks/contacts-promo.scss";
-@import "./blocks/footer.scss";
-@import "./blocks/footer-nav.scss";
-@import "./blocks/socials.scss";
+@import "./blocks/header";
+@import "./blocks/logo";
+@import "./blocks/hero";
+@import "./blocks/about";
+@import "./blocks/price";
+@import "./blocks/card-prise";
+@import "./blocks/games";
+@import "./blocks/juri";
+@import "./blocks/juri-card";
+@import "./blocks/slider-juri";
+@import "./blocks/features";
+@import "./blocks/offers";
+@import "./blocks/faq";
+@import "./blocks/reviews";
+@import "./blocks/slider";
+@import "./blocks/promo";
+@import "./blocks/form";
+@import "./blocks/contacts-promo";
+@import "./blocks/footer";
+@import "./blocks/footer-nav";
+@import "./blocks/socials";

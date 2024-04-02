@@ -4,16 +4,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SUPERGYM.Тренажёрный зал Групповые занятия Кардио-зона">
     <title>SUPERGYM</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="images/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
-    <link rel="preload" href="./fonts/alumni-sans/AlumniSans-SemiBold.woff2" as="font">
-    <link rel="preload" href="./fonts/roboto-condensed/Roboto-Condensed-Regular.woff" as="font">
+    <link rel="manifest" href="./img/favicons/site.webmanifest">
+    <link rel="preload" href="./fonts/alumni-sans/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/roboto-condensed/Robotocondensedlight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
-
-  <body class="page-body">
+  <body>
     <main>
       <section class="hero" data-test="hero">
         <header class="hero__header header">
@@ -30,8 +31,10 @@
           <p class="hero__description">Тренажёрный зал Групповые занятия Кардио-зона</p>
           <div class="hero__image">
             <picture>
-              <source type="images/webp" media="(min-width: 768px)" srcset="img/hero.webp 1x, img/hero@2x.webp 2x"  width="324" height="390">
-              <img class="hero__img" src="img/hero.jpg" srcset="img/hero.jpg 1x, img/hero@2x.jpg 2x" width="324" height="390" alt="мужчина в футболке супермена.">
+              <source type="images/webp" media="(min-width: 1366px)" srcset="img/hero.webp 1x, img/hero@2x.webp 2x"  width="500" height="524">
+              <source type="images/webp" media="(min-width: 768px)" srcset="img/hero-tabled.webp 1x, img/hero-tabled@2x.webp 2x"  width="324" height="390">
+              <source media="(min-width: 1366px)" srcset="img/hero.jpg 1x, img/hero@2x.jpg 2x"  width="500" height="524">
+              <img class="hero__img" src="img/hero-tabled.jpg" srcset="img/hero-tabled.jpg 1x, img/hero-tabled@2x.jpg 2x" width="324" height="390" alt="мужчина в футболке супермена.">
             </picture>
           </div>
           <a class="hero__button button button--light" href="#price">Купить абонемент</a>
@@ -42,17 +45,26 @@
           <h2 class="about__title title">Тренажёрный зал</h2>
           <span class="about__description">Просторный зал площадью 900 кв/м</span>
           <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
         </div>
         <div class="about__images">
           <picture>
-            <source type="images/webp"  media="(min-width: 768px)" srcset="img/about.webp 1x, img/about@2x.webp 2x" width="678" height="345">
-            <source media="(min-width: 768px)" srcset="img/about.jpg 1x, img/about@2x.jpg 2x" width="678" height="345">
+            <source type="images/webp" media="(min-width: 768px)" srcset="img/about-desktop.webp 1x, img/about-desktop@2x.webp 2x" width="660" height="400">
+            <source type="images/webp" media="(min-width: 768px)" srcset="img/about.webp 1x, img/about@2x.webp 2x" width="678" height="345">
             <source type="images/webp" srcset="img/about-phone.webp 1x, img/about-phone@2x.webp 2x" width="320" height="280">
-            <img class="about__img" src="img/about-phone.jpg" srcset="img/about-phone.jpg 1x img/about-phone@2x.jpg 2x" width="320" height="280" alt="Просторный зал площадью 900 кв/м.">
+            <source media="(min-width: 1366px)" srcset="img/about-desktop.jpg 1x, img/about-desktop@2x.jpg 2x" width="660" height="400">
+            <source media="(min-width: 768px)" srcset="img/about.jpg 1x, img/about@2x.jpg 2x" width="678" height="345">
+            <img class="about__img" src="img/about-phone.jpg" srcset="img/about-phone.jpg 1x, img/about-phone@2x.jpg 2x" width="320" height="280" alt="Просторный зал площадью 900 кв/м.">
           </picture>
           <div class="about__video">
-            <source type="images/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x" width="320" height="170">
-            <img class="about__video-img" src="img/video.jpg" srcset="img/video.jpg 1x img/video@2x.jpg 2x" width="320" height="170" alt="Видео о тренажерном зале.">
+            <picture>
+              <source type="images/webp" media="(min-width: 1366px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x" width="360" height="230">
+              <source type="images/webp" media="(min-width: 768px)" srcset="img/video-tabled.webp 1x, img/video-tabled@2x.webp 2x" width="270" height="170">
+              <source type="images/webp" srcset="img/video-phone.webp 1x, img/video-phone@2x.webp 2x" width="320" height="170">
+              <source media="(min-width: 1366px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" width="360" height="230">
+              <source media="(min-width: 768px)" srcset="img/video-tabled.jpg 1x, img/video-tabled@2x.jpg 2x" width="270" height="170">
+              <img class="about__video-img" src="img/video-phone.jpg" srcset="img/video-phone.jpg 1x, img/video-phone@2x.jpg 2x" width="320" height="170" alt="Видео о тренажерном зале.">
+            </picture>
             <button class="about__button-play" type="button" aria-label="Запустить видео о тренажерном зале.">
               <svg class="about__icon" width="13" height="15">
                 <use href="/__spritemap#sprite-play"></use>
@@ -81,7 +93,7 @@
                 <h3 class="card-prise__title">С тренером</h3>
                 <p class="card-prise__description">12 занятий</p>
                 <div class="card-prise__prise-wrapper">
-                  <span class="card-prise__shadow">5000</span>
+                  <span class="card-prise__shadow" aria-disabled="true">5000</span>
                   <span class="card-prise__prise">5000
                     <svg class="card-prise__icon" width="24" height="33">
                       <use href="/__spritemap#sprite-rubble"></use>
@@ -94,7 +106,7 @@
                 <h3 class="card-prise__title">Дневной</h3>
                 <p class="card-prise__description">с 8:00 до 17:00</p>
                 <div class="card-prise__prise-wrapper">
-                  <span class="card-prise__shadow">1700</span>
+                  <span class="card-prise__shadow" aria-disabled="true">1700</span>
                   <span class="card-prise__prise">1700
                     <svg class="card-prise__icon" width="24" height="33">
                       <use href="/__spritemap#sprite-rubble"></use>
@@ -107,7 +119,7 @@
                 <h3 class="card-prise__title">Полный день</h3>
                 <p class="card-prise__description">с 8:00 до 22:00</p>
                 <div class="card-prise__prise-wrapper">
-                  <span class="card-prise__shadow">2700</span>
+                  <span class="card-prise__shadow" aria-disabled="true">2700</span>
                   <span class="card-prise__prise">2700
                     <svg class="card-prise__icon" width="24" height="33">
                       <use href="/__spritemap#sprite-rubble"></use>
@@ -122,7 +134,7 @@
                 <h3 class="card-prise__title">С тренером</h3>
                 <p class="card-prise__description">12 занятий</p>
                 <div class="card-prise__prise-wrapper">
-                  <span class="card-prise__shadow">30000</span>
+                  <span class="card-prise__shadow" aria-disabled="true">30000</span>
                   <span class="card-prise__prise">30000
                     <svg class="card-prise__icon" width="24" height="33">
                       <use href="/__spritemap#sprite-rubble"></use>
@@ -135,7 +147,7 @@
                 <h3 class="card-prise__title">Дневной</h3>
                 <p class="card-prise__description">с 8:00 до 17:00</p>
                 <div class="card-prise__prise-wrapper">
-                  <span class="card-prise__shadow">10200</span>
+                  <span class="card-prise__shadow" aria-disabled="true">10200</span>
                   <span class="card-prise__prise">10200
                     <svg class="card-prise__icon" width="24" height="33">
                       <use href="/__spritemap#sprite-rubble"></use>
@@ -148,7 +160,7 @@
                 <h3 class="card-prise__title">Полный день</h3>
                 <p class="card-prise__description">с 8:00 до 22:00</p>
                 <div class="card-prise__prise-wrapper">
-                  <span class="card-prise__shadow">16200</span>
+                  <span class="card-prise__shadow" aria-disabled="true">16200</span>
                   <span class="card-prise__prise">16200
                     <svg class="card-prise__icon" width="24" height="33">
                       <use href="/__spritemap#sprite-rubble"></use>
@@ -163,7 +175,7 @@
                 <h3 class="card-prise__title">С тренером</h3>
                 <p class="card-prise__description">12 занятий</p>
                 <div class="card-prise__prise-wrapper">
-                  <span class="card-prise__shadow">60000</span>
+                  <span class="card-prise__shadow" aria-disabled="true">60000</span>
                   <span class="card-prise__prise">60000
                     <svg class="card-prise__icon" width="24" height="33">
                       <use href="/__spritemap#sprite-rubble"></use>
@@ -176,7 +188,7 @@
                 <h3 class="card-prise__title">Дневной</h3>
                 <p class="card-prise__description">с 8:00 до 17:00</p>
                 <div class="card-prise__prise-wrapper">
-                  <span class="card-prise__shadow">20400</span>
+                  <span class="card-prise__shadow" aria-disabled="true">20400</span>
                   <span class="card-prise__prise">20400
                     <svg class="card-prise__icon" width="24" height="33">
                       <use href="/__spritemap#sprite-rubble"></use>
@@ -189,7 +201,7 @@
                 <h3 class="card-prise__title">Полный день</h3>
                 <p class="card-prise__description">с 8:00 до 22:00</p>
                 <div class="card-prise__prise-wrapper">
-                  <span class="card-prise__shadow">32400</span>
+                  <span class="card-prise__shadow" aria-disabled="true">32400</span>
                   <span class="card-prise__prise">32400
                     <svg class="card-prise__icon" width="24" height="33">
                       <use href="/__spritemap#sprite-rubble"></use>
@@ -207,7 +219,9 @@
           <h2 class="games__title">SUPER GAMES</h2>
           <div class="games__meta">
             <p class="games__subtitle">Дата</p>
-            <time class="games__date" datetime="2019-03-07">7 <span class="games__month">марта 2019</span></time>
+            <time class="games__date" datetime="2019-03-07">7
+              <span class="games__month">Марта 2019</span>
+            </time>
             <p class="games__subtitle">Время</p>
             <time class="games__time" datetime="12:00">12:00</time>
           </div>
@@ -216,13 +230,13 @@
         </div>
         <picture>
           <source type="images/webp" srcset="img/games.webp 1x, img/games@2x.webp 2x" width="290" height="290">
-          <img class="games__img" src="img/games.jpg" srcset="img/games.jpg 1x img/games@2x.jpg 2x" width="290" height="290" alt="соревнования по CrossFit.">
+          <img class="games__img" src="img/games.jpg" srcset="img/games.jpg 1x, img/games@2x.jpg 2x" width="290" height="290" alt="соревнования по CrossFit.">
         </picture>
       </section>
       <section class="juri wrapper" data-test="juri">
         <h2 class="juri__title title">Жюри</h2>
         <div class="juri__wrapper">
-          <button class="juri__button juri__button--prev swiper-button-prev">
+          <button class="juri__button juri__button--prev swiper-button-prev" type="button">
             <span class="visually-hidden">Предыдущий тренер.</span>
             <svg class="juri__icon" width="16" height="32">
               <use href="/__spritemap#sprite-arrow"></use>
@@ -236,21 +250,15 @@
                   <div class="juri-card__images">
                     <picture>
                       <source type="images/webp" srcset="img/jury-card-1.webp 1x, img/jury-card-1@2x.webp 2x" width="227" height="280">
-                      <img class="juri-card__img" src="img/jury-card-1.jpg" srcset="img/jury-card-1.jpg 1x img/jury-card-1@2x.jpg 2x" width="227" height="280" alt="Фото Анны Павловой.">
+                      <img class="juri-card__img" src="img/jury-card-1.jpg" srcset="img/jury-card-1.jpg 1x, img/jury-card-1@2x.jpg 2x" width="227" height="280" alt="Фото Анны Павловой.">
                     </picture>
                   </div>
                   <div class="juri-card__hidden">
                     <p class="juri-card__profession">Pole-Dance</p>
                     <ul class="juri-card__achievement-list">
-                      <li class="juri-card__achievement">
-                        Certified Level 3 Trainer
-                      </li>
-                      <li class="juri-card__achievement">
-                        Победитель чемпионата России по Pole-Dance
-                      </li>
-                      <li class="juri-card__achievement">
-                        Опыт — 5 лет
-                      </li>
+                      <li class="juri-card__achievement">Certified Level 3 Trainer</li>
+                      <li class="juri-card__achievement">Победитель чемпионата России по Pole-Dance</li>
+                      <li class="juri-card__achievement">Опыт — 5 лет</li>
                     </ul>
                   </div>
                 </div>
@@ -261,21 +269,15 @@
                   <div class="juri-card__images">
                     <picture>
                       <source type="images/webp" srcset="img/jury-card-2.webp 1x, img/jury-card-2@2x.webp 2x" width="227" height="280">
-                      <img class="juri-card__img" src="img/jury-card-2.jpg" srcset="img/jury-card-2.jpg 1x img/jury-card-2@2x.jpg 2x" width="227" height="280" alt="Фото Алексея Лаврова.">
+                      <img class="juri-card__img" src="img/jury-card-2.jpg" srcset="img/jury-card-2.jpg 1x, img/jury-card-2@2x.jpg 2x" width="227" height="280" alt="Фото Алексея Лаврова.">
                     </picture>
                   </div>
                   <div class="juri-card__hidden">
                     <p class="juri-card__profession">Bodypump</p>
                     <ul class="juri-card__achievement-list">
-                      <li class="juri-card__achievement">
-                        Certified Level 4 Trainer
-                      </li>
-                      <li class="juri-card__achievement">
-                        Призер чемпионата России по Bodypump
-                      </li>
-                      <li class="juri-card__achievement">
-                        Опыт — 7 лет
-                      </li>
+                      <li class="juri-card__achievement">Certified Level 4 Trainer</li>
+                      <li class="juri-card__achievement">Призер чемпионата России по Bodypump</li>
+                      <li class="juri-card__achievement">Опыт — 7 лет</li>
                     </ul>
                   </div>
                 </div>
@@ -286,21 +288,15 @@
                     <h3 class="juri-card__title">Александр Пашков</h3>
                     <picture>
                       <source type="images/webp" srcset="img/jury-card-3.webp 1x, img/jury-card-3@2x.webp 2x" width="227" height="280">
-                      <img class="juri-card__img" src="img/jury-card-3.jpg" srcset="img/jury-card-3.jpg 1x img/jury-card-3@2x.jpg 2x" width="227" height="280" alt="Фото Александра Пашкова.">
+                      <img class="juri-card__img" src="img/jury-card-3.jpg" srcset="img/jury-card-3.jpg 1x, img/jury-card-3@2x.jpg 2x" width="227" height="280" alt="Фото Александра Пашкова.">
                     </picture>
                   </div>
                   <div class="juri-card__hidden">
                     <p class="juri-card__profession">CrossFit</p>
                     <ul class="juri-card__achievement-list">
-                      <li class="juri-card__achievement">
-                        Certified Level 3 Trainer
-                      </li>
-                      <li class="juri-card__achievement">
-                        Победитель чемпионата России по CrossFit
-                      </li>
-                      <li class="juri-card__achievement">
-                        Опыт — 6 лет
-                      </li>
+                      <li class="juri-card__achievement">Certified Level 3 Trainer</li>
+                      <li class="juri-card__achievement">Победитель чемпионата России по CrossFit</li>
+                      <li class="juri-card__achievement">Опыт — 6 лет</li>
                     </ul>
                   </div>
                 </div>
@@ -311,21 +307,15 @@
                   <div class="juri-card__images">
                     <picture>
                       <source type="images/webp" srcset="img/jury-card-4.webp 1x, img/jury-card-4@2x.webp 2x" width="227" height="280">
-                      <img class="juri-card__img" src="img/jury-card-4.jpg" srcset="img/jury-card-4.jpg 1x img/jury-card-4@2x.jpg 2x" width="227" height="280" alt="Фото Марии Кетовой.">
+                      <img class="juri-card__img" src="img/jury-card-4.jpg" srcset="img/jury-card-4.jpg 1x, img/jury-card-4@2x.jpg 2x" width="227" height="280" alt="Фото Марии Кетовой.">
                     </picture>
                   </div>
                   <div class="juri-card__hidden">
                     <p class="juri-card__profession">Yoga</p>
                     <ul class="juri-card__achievement-list">
-                      <li class="juri-card__achievement">
-                        Certified Level 2 Trainer
-                      </li>
-                      <li class="juri-card__achievement">
-                        3 года изучала духовные практики в Индии
-                      </li>
-                      <li class="juri-card__achievement">
-                        Опыт — 5 лет
-                      </li>
+                      <li class="juri-card__achievement">Certified Level 2 Trainer</li>
+                      <li class="juri-card__achievement">3 года изучала духовные практики в Индии</li>
+                      <li class="juri-card__achievement">Опыт — 5 лет</li>
                     </ul>
                   </div>
                 </div>
@@ -335,22 +325,16 @@
                   <h3 class="juri-card__title">Елена Симонова</h3>
                   <div class="juri-card__images">
                     <picture>
-                      <source type="images/webp" srcset="img/jury-card-1.webp 1x, img/jury-card-1@2x.webp 2x" width="227" height="280">
-                      <img class="juri-card__img" src="img/jury-card-1.jpg" srcset="img/jury-card-1.jpg 1x img/jury-card-1@2x.jpg 2x" width="227" height="280" alt="Фото Елены Симоновой.">
+                      <source type="images/webp" srcset="img/jury-card-5.webp 1x, img/jury-card-5@2x.webp 2x" width="227" height="280">
+                      <img class="juri-card__img" src="img/jury-card-5.jpg" srcset="img/jury-card-5.jpg 1x, img/jury-card-5@2x.jpg 2x" width="227" height="280" alt="Фото Елены Симоновой.">
                     </picture>
                   </div>
                   <div class="juri-card__hidden">
                     <p class="juri-card__profession">Shaping</p>
                     <ul class="juri-card__achievement-list">
-                      <li class="juri-card__achievement">
-                        Certified Level 4 Trainer
-                      </li>
-                      <li class="juri-card__achievement">
-                        Призер чемпионата России по Shaping
-                      </li>
-                      <li class="juri-card__achievement">
-                        Опыт — 7 лет
-                      </li>
+                      <li class="juri-card__achievement">Certified Level 4 Trainer</li>
+                      <li class="juri-card__achievement">Призер чемпионата России по Shaping</li>
+                      <li class="juri-card__achievement">Опыт — 7 лет</li>
                     </ul>
                   </div>
                 </div>
@@ -361,21 +345,15 @@
                   <div class="juri-card__images">
                     <picture>
                       <source type="images/webp" srcset="img/jury-card-2.webp 1x, img/jury-card-2@2x.webp 2x" width="227" height="280">
-                      <img class="juri-card__img" src="img/jury-card-2.jpg" srcset="img/jury-card-2.jpg 1x img/jury-card-2@2x.jpg 2x" width="227" height="280" alt="Фото Ивана Лукина.">
+                      <img class="juri-card__img" src="img/jury-card-2.jpg" srcset="img/jury-card-2.jpg 1x, img/jury-card-2@2x.jpg 2x" width="227" height="280" alt="Фото Ивана Лукина.">
                     </picture>
                   </div>
                   <div class="juri-card__hidden">
                     <p class="juri-card__profession">Circuit-Training</p>
                     <ul class="juri-card__achievement-list">
-                      <li class="juri-card__achievement">
-                        Certified Level 5 Trainer
-                      </li>
-                      <li class="juri-card__achievement">
-                        Призер чемпионата России по Circuit Training
-                      </li>
-                      <li class="juri-card__achievement">
-                        Опыт — 10 лет
-                      </li>
+                      <li class="juri-card__achievement">Certified Level 5 Trainer</li>
+                      <li class="juri-card__achievement">Призер чемпионата России по Circuit Training</li>
+                      <li class="juri-card__achievement">Опыт — 10 лет</li>
                     </ul>
                   </div>
                 </div>
@@ -386,21 +364,15 @@
                   <div class="juri-card__images">
                     <picture>
                       <source type="images/webp" srcset="img/jury-card-3.webp 1x, img/jury-card-3@2x.webp 2x" width="227" height="280">
-                      <img class="juri-card__img" src="img/jury-card-3.jpg" srcset="img/jury-card-3.jpg 1x img/jury-card-3@2x.jpg 2x" width="227" height="280" alt="Фото Александа Ивченко.">
+                      <img class="juri-card__img" src="img/jury-card-3.jpg" srcset="img/jury-card-3.jpg 1x, img/jury-card-3@2x.jpg 2x" width="227" height="280" alt="Фото Александа Ивченко.">
                     </picture>
                   </div>
                   <div class="juri-card__hidden">
                     <p class="juri-card__profession">CrossFit</p>
                     <ul class="juri-card__achievement-list">
-                      <li class="juri-card__achievement">
-                        Certified Level 2 Trainer
-                      </li>
-                      <li class="juri-card__achievement">
-                        Призер чемпионата России по CrossFit
-                      </li>
-                      <li class="juri-card__achievement">
-                        Опыт — 3 года
-                      </li>
+                      <li class="juri-card__achievement">Certified Level 2 Trainer</li>
+                      <li class="juri-card__achievement">Призер чемпионата России по CrossFit</li>
+                      <li class="juri-card__achievement">Опыт — 3 года</li>
                     </ul>
                   </div>
                 </div>
@@ -410,29 +382,23 @@
                   <h3 class="juri-card__title">Алиса Крупкова</h3>
                   <div class="juri-card__images">
                     <picture>
-                      <source type="images/webp" srcset="img/jury-card-4.webp 1x, img/jury-card-4@2x.webp 2x" width="227" height="280">
-                      <img class="juri-card__img" src="img/jury-card-4.jpg" srcset="img/jury-card-4.jpg 1x img/jury-card-4@2x.jpg 2x" width="227" height="280" alt="Фото Алисы Крупковой.">
+                      <source type="images/webp" srcset="img/jury-card-8.webp 1x, img/jury-card-8@2x.webp 2x" width="227" height="280">
+                      <img class="juri-card__img" src="img/jury-card-8.jpg" srcset="img/jury-card-8.jpg 1x, img/jury-card-8@2x.jpg 2x" width="227" height="280" alt="Фото Алисы Крупковой.">
                     </picture>
                   </div>
                   <div class="juri-card__hidden">
                     <p class="juri-card__profession">Yoga</p>
                     <ul class="juri-card__achievement-list">
-                      <li class="juri-card__achievement">
-                        Certified Level 2 Trainer
-                      </li>
-                      <li class="juri-card__achievement">
-                        Причез чемпионата области по CrossFit
-                      </li>
-                      <li class="juri-card__achievement">
-                        Опыт — 4 года
-                      </li>
+                      <li class="juri-card__achievement">Certified Level 2 Trainer</li>
+                      <li class="juri-card__achievement">Призер чемпионата области по CrossFit</li>
+                      <li class="juri-card__achievement">Опыт — 4 года</li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <button class="juri__button juri__button--next swiper-button-next">
+          <button class="juri__button juri__button--next swiper-button-next" type="button">
             <span class="visually-hidden">Следущий тренер.</span>
             <svg class="juri__icon" width="16" height="32">
               <use href="/__spritemap#sprite-arrow"></use>
@@ -467,7 +433,7 @@
               <p>350</p>
               <span>мест</span>
               <h3>Комфорт</h3>
-              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              <p>Просторные раздевалки, душевые, фен, Wi&#8209;Fi, кулеры</p>
             </li>
             <li class="features__item features__item--light">
               <p>5+</p>
@@ -479,7 +445,7 @@
         </div>
       </section>
       <section class="offers" data-test="offers">
-        <!-- .isDisabled - класс для отключения ссылок aria-disabled="true" необходимо добавлять в ручную -->
+        <!-- .is-disabled - класс для отключения ссылок aria-disabled="true" необходимо добавлять в ручную -->
         <h2 class="offers__title title">Акции</h2>
         <div class="offers__content">
           <div class="offers__preview">
@@ -491,8 +457,12 @@
             </div>
             <div class="offers__images">
               <picture>
-                <source type="images/webp" srcset="img/offers.webp, img/offers.webp@2x.webp 2x" width="320" height="360">
-                <img class="offers__img" src="img/offers.jpg" srcset="img/offers.jpg 1x img/offers@2x.jpg 2x" width="320" height="360"  alt="Девушка в спортивном костюме.">
+                <source type="images/webp" media="(min-width: 1366px)" srcset="img/offers-desktop.webp 1x, img/offers-desktop@2x.webp 2x" width="280" height="460">
+                <source type="images/webp" media="(min-width: 768px)" srcset="img/offers-tabled.webp 1x, img/offers-tabled@2x.webp 2x" width="400" height="462">
+                <source type="images/webp" srcset="img/offers-phone.webp 1x, img/offers-phone.webp@2x.webp 2x" width="320" height="360">
+                <source media="(min-width: 1366px)" srcset="img/offers-desktop.jpg 1x, img/offers-desktop@2x.jpg 2x" width="280" height="460">
+                <source media="(min-width: 768px)" srcset="img/offers-tabled.jpg 1x, img/offers-tabled@2x.jpg 2x" width="400" height="462">
+                <img class="offers__img" src="img/offers-phone.jpg" srcset="img/offers-phone.jpg 1x, img/offers-phone@2x.jpg 2x" width="320" height="360"  alt="Девушка в спортивном костюме.">
               </picture>
             </div>
           </div>
@@ -516,34 +486,34 @@
         <div class="faq__wrapper wrapper">
           <h2 class="faq__title title">Вопросы и ответы</h2>
           <div class="faq__buttons">
-            <button class="faq__button faq__button--activ" data-chapter="club">Центр</button>
-            <button class="faq__button" data-chapter="subscription">Абонимент</button>
-            <button class="faq__button" data-chapter="services">Услуги</button>
-            <button class="faq__button" data-chapter="rules">Правила</button>
+            <button class="faq__button faq__button--activ" type="button" data-chapter="club">Центр</button>
+            <button class="faq__button" type="button" data-chapter="subscription">Абонимент</button>
+            <button class="faq__button" type="button" data-chapter="services">Услуги</button>
+            <button class="faq__button" type="button" data-chapter="rules">Правила</button>
           </div>
           <div class="faq__info">
             <div class="faq__box faq__box--activ" data-chapter="club">
-              <div class="faq__content">
+              <div class="faq__content faq__content--open">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
-                  <h3>Как стать членом фитнес-центра?</h3>
+                  <button class="faq__control faq__control--activ" type="button" aria-label="Свернуть/развернуть ответ."></button>
+                  <h3>Как стать членом фитнес&#8209;центра?</h3>
                 </div>
                 <div class="faq__hidden">
-                  <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                  <p>При первом посещении и покупке абонемента, необходимо заполнить анкету<br> и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
                 </div>
               </div>
               <div class="faq__content">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
+                  <button class="faq__control" type="button" aria-label="Свернуть/развернуть ответ."></button>
                   <h3>Где можно посмотреть расписание?</h3>
                 </div>
                 <div class="faq__hidden">
-                  <p>Расписание можно найти на нашем сайте в специальном раделе, позвонить на ресепшн или при посещении клуба.</p>
+                  <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
                 </div>
               </div>
               <div class="faq__content">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
+                  <button class="faq__control" type="button" aria-label="Свернуть/развернуть ответ."></button>
                   <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
                 </div>
                 <div class="faq__hidden">
@@ -552,18 +522,18 @@
               </div>
               <div class="faq__content">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
-                  <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
+                  <button class="faq__control" type="button" aria-label="Свернуть/развернуть ответ."></button>
+                  <h3>Сколько тренеров работает в клубе и какова <br>их квалификация?</h3>
                 </div>
                 <div class="faq__hidden">
                   <p>В нашем зале работает 8 профессиональных тренеров. С квалификацией каждого из них Вы можете ознакомится на нашем сайте или стойке администратора.</p>
                 </div>
               </div>
             </div>
-            <div class="faq__box"  data-chapter="subscription">
+            <div class="faq__box" data-chapter="subscription">
               <div class="faq__content">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
+                  <button class="faq__control" type="button" aria-label="Свернуть/развернуть ответ."></button>
                   <h3>Занятия с тренером входят в абонемент?</h3>
                 </div>
                 <div class="faq__hidden">
@@ -572,7 +542,7 @@
               </div>
               <div class="faq__content">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
+                  <button class="faq__control" type="button" aria-label="Свернуть/развернуть ответ."></button>
                   <h3>Можно ли заморозить абонемент?</h3>
                 </div>
                 <div class="faq__hidden">
@@ -581,7 +551,7 @@
               </div>
               <div class="faq__content">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
+                  <button class="faq__control" type="button" aria-label="Свернуть/развернуть ответ."></button>
                   <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
                 </div>
                 <div class="faq__hidden">
@@ -590,7 +560,7 @@
               </div>
               <div class="faq__content">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
+                  <button class="faq__control" type="button" aria-label="Свернуть/развернуть ответ."></button>
                   <h3>Что такое семейный доступ и доступ для друзей?</h3>
                 </div>
                 <div class="faq__hidden">
@@ -601,7 +571,7 @@
             <div class="faq__box" data-chapter="services">
               <div class="faq__content">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
+                  <button class="faq__control" type="button" aria-label="Свернуть/развернуть ответ."></button>
                   <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
                 </div>
                 <div class="faq__hidden">
@@ -610,7 +580,7 @@
               </div>
               <div class="faq__content">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
+                  <button class="faq__control" type="button" aria-label="Свернуть/развернуть ответ."></button>
                   <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
                 </div>
                 <div class="faq__hidden">
@@ -619,7 +589,7 @@
               </div>
               <div class="faq__content">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
+                  <button class="faq__control" type="button" aria-label="Свернуть/развернуть ответ."></button>
                   <h3>Можно ли приобрести в центре спортивное питание?</h3>
                 </div>
                 <div class="faq__hidden">
@@ -628,7 +598,7 @@
               </div>
               <div class="faq__content">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
+                  <button class="faq__control" type="button" aria-label="Свернуть/развернуть ответ."></button>
                   <h3>Есть ли в центре детская комната?</h3>
                 </div>
                 <div class="faq__hidden">
@@ -639,7 +609,7 @@
             <div class="faq__box" data-chapter="rules">
               <div class="faq__content">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
+                  <button class="faq__control" type="button" aria-label="Свернуть/развернуть ответ."></button>
                   <h3>Есть в фитнес-центре дресс-код?</h3>
                 </div>
                 <div class="faq__hidden">
@@ -648,16 +618,16 @@
               </div>
               <div class="faq__content">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
+                  <button class="faq__control" type="button" aria-label="Свернуть/развернуть ответ."></button>
                   <h3>Можно ли приводить с собой детей на тренировки?</h3>
                 </div>
                 <div class="faq__hidden">
-                  <p>С 2 лет возможно посещение детской комнаты. С 14 лет при наличии абонимента возможны персональные занятия с тренером, самостоятельное посещение групповых занятий по расписанию, посещение кардиозала, тренажерного зала и свободного плавания в бассейне, в присудствии родителя или законного предстовителя.</p>
+                  <p>Да, можно. В рамках комплексов прекрасные детские комнаты и тренеры со специальным образованием.</p>
                 </div>
               </div>
               <div class="faq__content">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
+                  <button class="faq__control" type="button" aria-label="Свернуть/развернуть ответ."></button>
                   <h3>Какие дополнительные правила посещения центра?</h3>
                 </div>
                 <div class="faq__hidden">
@@ -666,7 +636,7 @@
               </div>
               <div class="faq__content">
                 <div class="faq__visible">
-                  <button class="faq__control" aria-label="Свернуть/развернуть ответ."></button>
+                  <button class="faq__control" type="button" aria-label="Свернуть/развернуть ответ."></button>
                   <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
                 </div>
                 <div class="faq__hidden">
@@ -718,13 +688,13 @@
               </div>
             </div>
           </div>
-          <button class="slider__button slider__button--prew swiper-button-prev">
+          <button class="slider__button slider__button--prew swiper-button-prev" type="button">
             <span class="visually-hidden">Предыдущий отзыв.</span>
             <svg class="slider__icon" width="16" height="32">
               <use href="/__spritemap#sprite-arrow"></use>
             </svg>
           </button>
-          <button class="slider__button slider__button--next swiper-button-next">
+          <button class="slider__button slider__button--next swiper-button-next" type="button">
             <span class="visually-hidden">Следующий отзыв.</span>
             <svg class="slider__icon" width="16" height="32">
               <use href="/__spritemap#sprite-arrow"></use>
@@ -732,11 +702,11 @@
           </button>
         </div>
       </section>
-      <section class="promo">
+      <section class="promo"  data-test="form">
         <div class="promo__wrapper">
-          <form class="promo__form form" action="https://echo.htmlacademy.ru/" method="post" data-test="form">
+          <form class="promo__form form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__conteiner">
-              <h2 class="form__title title">Бесплатное занятие</h3>
+              <h2 class="form__title title">Бесплатное занятие</h2>
                 <div class="form__wrapper">
                   <label class="form__label">
                     <span class="visually-hidden">Ваше имя</span>
@@ -749,7 +719,7 @@
                     <span class="form__error">Пожалуйста, вводите только цифры</span>
                   </label>
                 </div>
-              <button class="form_button button button--light" type="submit">отправить</button>
+              <button class="form__button button button--light" type="submit">отправить</button>
             </div>
           </form>
           <div class="promo__contacts contacts-promo wrapper">
@@ -761,7 +731,7 @@
               </li>
               <li class="contacts-promo__item">
                 <h3 class="contacts-promo__subtitle">График работы:</h3>
-                <p class="contacts-promo__description">Пн-Вс: с 8:00 до 22:00</address>
+                <p class="contacts-promo__description">Пн-Вс: с 8:00 до 22:00</p>
               </li>
               <li class="contacts-promo__item">
                 <h3 class="contacts-promo__subtitle">Телефон:</h3>
@@ -798,9 +768,10 @@
             </li>
           </ul>
           <ul class="footer__socials socials ">
-            <!-- .isDisabled - класс для отключения ссылок aria-disabled="true" необходимо добавлять в ручную -->
+            <!-- .is-disabled - класс для отключения ссылок aria-disabled="true" необходимо добавлять в ручную -->
             <li class="socials__item">
               <a class="socials__link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Группа Вконтакте.</span>
                 <svg class="socials__icon" width="14" height="14">
                   <use href="/__spritemap#sprite-vk"></use>
                 </svg>
@@ -808,6 +779,7 @@
             </li>
             <li class="socials__item">
               <a class="socials__link" href="https://ok.ru/">
+                <span class="visually-hidden">Страница в Одноклассниках.</span>
                 <svg class="socials__icon" width="9" height="16">
                   <use href="/__spritemap#sprite-ok"></use>
                 </svg>
@@ -815,6 +787,7 @@
             </li>
             <li class="socials__item">
               <a class="socials__link" href="https://www.reddit.com/">
+                <span class="visually-hidden">Страница Реддит.</span>
                 <svg class="socials__icon" width="14" height="14">
                   <use href="/__spritemap#sprite-reddit"></use>
                 </svg>
@@ -826,5 +799,4 @@
     </main>
     <script type="module" src="js/main.js"></script>
   </body>
-
 </html>

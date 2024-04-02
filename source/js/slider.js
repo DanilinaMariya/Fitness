@@ -2,8 +2,6 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
-const juriSlide = document.querySelectorAll('.slider-juri__slide');
-const luriSliderWrapper = document.querySelector('.slider-juri__wrapper');
 const reviewsSlide = document.querySelectorAll('.slider__slide');
 const reviewsButton = document.querySelectorAll('.slider__button');
 
@@ -51,7 +49,7 @@ new Swiper('.juri__slider', {
   loop: true,
   speed: 500,
   autoHeight: true,
-  slideToClickedSlide: true,
+  watchSlidesProgress: true,
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -73,15 +71,6 @@ new Swiper('.juri__slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   }
-});
-
-const juriSlideFocus = (el) => {
-  luriSliderWrapper.style.cssText += `
-  transform: translate3d(-${Number(el.dataset.swiperSlideIndex) * 300}px, 0px, 0px)`;
-};
-
-juriSlide.forEach((el) => {
-  el.addEventListener('focus', () => juriSlideFocus(el));
 });
 
 reviewsButton.forEach((el) => {

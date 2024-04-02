@@ -1,22 +1,10 @@
 .price {
   background-color: $color-grey;
-  padding-top: 24px;
-  padding-bottom: 24px;
   overflow: hidden;
-
-  @media (min-width: $width-tablet) {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  @media (min-width: $width-desktop) {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
 }
 
 .price__title {
-  padding-bottom: 30px;
+  padding-bottom: 26px;
 
   @media (min-width: $width-tablet) {
     padding-bottom: 35px;
@@ -35,7 +23,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  border-bottom: 2px solid rgba(120, 120, 120, 0.20);
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 
   @media (min-width: $width-tablet) {
     width: 310px;
@@ -56,7 +44,8 @@
   opacity: 0.5;
   border: none;
   background-color: transparent;
-  padding-bottom: 18px;
+  padding: 0;
+  padding-bottom: 16px;
   margin-bottom: -2px;
   cursor: pointer;
 
@@ -64,6 +53,7 @@
     opacity: 0.7;
     border-bottom: 2px solid #787878;
   }
+
   &--activ,
   &:active {
     border-bottom: 2px solid $color-dark-rad;
@@ -80,6 +70,18 @@
     opacity: 0.3;
     border-bottom: 2px solid $color-primary;
   }
+
+  @media (min-width: $width-tablet) {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 8px;
+  }
 }
 
 .price__wrapper {
@@ -88,10 +90,11 @@
 
   @media (min-width: $width-tablet) {
     padding-top: 45px;
+
     &::before {
       content: "";
       position: absolute;
-      bottom: -50px;
+      bottom: -48px;
       right: -9%;
       transform: rotate(150deg);
       width: 275px;
@@ -106,8 +109,10 @@
     padding-top: 40px;
 
     &::before {
-      bottom: -75px;
-      right: -15%;
+      width: 321px;
+      height: 384px;
+      bottom: -91px;
+      right: -17%;
     }
   }
 }
@@ -125,6 +130,10 @@
     display: flex;
   }
 
+  @media (min-width: $width-tablet) {
+    gap: 40px;
+  }
+
   @media (min-width: $width-desktop) {
     flex-direction: row;
     gap: 0;
@@ -133,7 +142,7 @@
 }
 
 .price__item {
-  @media (min-width: $width-tablet) and (max-width: 1365px) {
+  @media (min-width: $width-tablet) and (width <= 1365px) {
     margin: 0 auto;
   }
 }

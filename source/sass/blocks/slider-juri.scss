@@ -12,6 +12,7 @@
 
 .slider-juri__slide {
   max-width: 227px;
+  visibility: hidden;
 
   @media (min-width: $width-tablet) {
     max-width: 260px;
@@ -24,9 +25,27 @@
 }
 
 .slider-juri__slide:focus .juri-card__title {
-  top: 25px ;
+  top: 25px;
 
   @media (min-width: $width-tablet) {
-    top: 45px
+    top: 45px;
+  }
+}
+
+.swiper-slide-fully-visible {
+  visibility: visible;
+}
+
+.swiper-button-prev {
+  @media (min-width: $width-desktop) {
+    top: 49%;
+    left: 27px;
+  }
+}
+
+.swiper-button-next {
+  @media (min-width: $width-desktop) {
+    top: 49%;
+    right: 27px;
   }
 }

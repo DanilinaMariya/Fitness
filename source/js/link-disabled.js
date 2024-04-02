@@ -1,16 +1,7 @@
-const socialsLink = document.querySelectorAll('.socials__link');
-const offersLink = document.querySelectorAll('.offers__link');
+const link = document.querySelectorAll('a');
 
-const isDisabled = (event) => {
-  if (socialsLink.classList.contains('isDisabled')) {
-    event.preventDefault();
+link.forEach((el) => {
+  if (el.classList.contains('is-disabled')) {
+    el.preventDefault();
   }
-};
-
-socialsLink.forEach((el) => {
-  el.addEventListener('click',isDisabled);
-});
-
-offersLink.forEach((el) => {
-  el.addEventListener('click',isDisabled);
 });

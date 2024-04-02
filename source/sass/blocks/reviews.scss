@@ -5,7 +5,7 @@
   padding-left: 40px;
   padding-right: 40px;
 
-  @media (min-width: $width-tablet) and (max-width: 1365px) {
+  @media (min-width: $width-tablet) and (width <= 1365px) {
     padding-left: 27px;
     padding-right: 27px;
     gap: 35px;
