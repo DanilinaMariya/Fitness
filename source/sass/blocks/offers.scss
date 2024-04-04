@@ -6,14 +6,15 @@
   box-sizing: border-box;
 
   @media (min-width: $width-tablet) {
-    width: $width-tablet;
+    width: 100%;
+    max-width: $width-tablet;
     margin: 0 auto;
     padding: 60px 45px;
     gap: 35px;
   }
 
   @media (min-width: $width-desktop) {
-    width: $width-desktop;
+    max-width: $width-desktop;
     padding: 100px 103px;
     gap: 70px;
   }

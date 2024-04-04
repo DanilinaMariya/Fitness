@@ -7,9 +7,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    width: 683px;
+    width: 100%;
+    max-width: 683px;
     padding: 60px 103px;
-    border-top: 1px solid #74819c;
   }
 }
 

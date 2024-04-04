@@ -23,4 +23,6 @@ const oniframeButtonClick = () => {
   iframeWrapper.appendChild(iframe);
 };
 
-iframeButton.addEventListener('click', oniframeButtonClick);
+if (iframeButton) {
+  iframeButton.addEventListener('click', oniframeButtonClick);
+}

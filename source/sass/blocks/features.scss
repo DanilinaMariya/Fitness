@@ -5,16 +5,17 @@
 .features__conteiner {
   padding: 40px 0;
   box-sizing: border-box;
+  width: 100%;
 
   @media (min-width: $width-tablet) {
     padding: 60px 45px;
-    width: $width-tablet;
+    max-width: $width-tablet;
     margin: 0 auto;
   }
 
   @media (min-width: $width-desktop) {
     padding: 100px 103px 20px;
-    width: $width-desktop;
+    max-width: $width-desktop;
   }
 }
 
