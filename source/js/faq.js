@@ -41,6 +41,8 @@ const onFaqButtonClick = (el) => {
       e.classList.remove('faq__box--activ');
     }
   });
+
+  boxeDefault();
 };
 
 faqContent.forEach((el) => {
